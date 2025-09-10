@@ -1,0 +1,16 @@
+Inventory Management Calculations
+Days of Inventory Remaining: [InventoryLevel] / AVG([DailySales])
+
+// Order Fulfillment Calculations
+On-Time Delivery Rate: SUM(IF [OnTimeDelivery] = 'Yes' THEN 1 ELSE 0 END) /
+COUNT([OrderID])
+
+// Supplier Performance Calculations
+Average Delivery Time: AVG([DeliveryTime])
+Defect Rate: SUM([DefectiveUnits]) / SUM([TotalUnits])
+
+// Transportation Efficiency Calculations
+Average Transit Time: AVG([TransitTime])
+
+// Supply Chain Costs Calculations
+Total Costs: SUM([Amount])
